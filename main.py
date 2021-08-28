@@ -62,7 +62,7 @@ def is_url_already_exists(long_url):
 def get_existing_short_url(long_url):
     urls_dict = get_urls_dict()
     if long_url in urls_dict:
-        return urls_dict.get(long_url)
+        return "/" + urls_dict.get(long_url)
 
 
 def create_urls_file():
